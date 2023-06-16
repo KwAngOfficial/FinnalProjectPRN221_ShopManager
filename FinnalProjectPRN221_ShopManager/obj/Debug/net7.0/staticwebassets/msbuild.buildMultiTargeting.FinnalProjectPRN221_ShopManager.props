@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\FinnalProjectPRN221_ShopManager.props" />
+</Project>
