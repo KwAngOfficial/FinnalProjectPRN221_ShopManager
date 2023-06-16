@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Course_7\\PRN221\\RarozPageProject\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager.csproj": {}
+    "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager.csproj": {}
   },
   "projects": {
-    "E:\\Course_7\\PRN221\\RarozPageProject\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager.csproj": {
+    "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Course_7\\PRN221\\RarozPageProject\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager.csproj",
+        "projectUniqueName": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager.csproj",
         "projectName": "FinnalProjectPRN221_ShopManager",
-        "projectPath": "E:\\Course_7\\PRN221\\RarozPageProject\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager.csproj",
+        "projectPath": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager.csproj",
         "packagesPath": "C:\\Users\\devkw\\.nuget\\packages\\",
-        "outputPath": "E:\\Course_7\\PRN221\\RarozPageProject\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\obj\\",
+        "outputPath": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\devkw\\AppData\\Roaming\\NuGet\\NuGet.Config",

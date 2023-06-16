@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OI+td7WfDaJzwbQOTP9h5Zxgzl+4USPuUTqTnEbTBoyXl2wO0TXb+MUkMMYGEZ3nyvORSv81fQOXlD85zCUSQA==",
+  "dgSpecHash": "6OJ7AasHKE1VEsOyTEiFOpgCi89cN7xgA9Qq7xx+kQzvixqDQFlJtqxUeGOFPMn9np7OHbZU9IkBywGXLUUtMQ==",
   "success": true,
-  "projectFilePath": "E:\\Course_7\\PRN221\\RarozPageProject\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager.csproj",
+  "projectFilePath": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\devkw\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\devkw\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
