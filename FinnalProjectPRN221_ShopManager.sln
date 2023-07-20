@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33712.159
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinnalProjectPRN221_ShopManager", "FinnalProjectPRN221_ShopManager\FinnalProjectPRN221_ShopManager.csproj", "{F11F0C68-BE20-43A6-8911-EA717BE97784}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinnalProjectPRN221_ShopManager", "FinnalProjectPRN221_ShopManager\FinnalProjectPRN221_ShopManager.csproj", "{F11F0C68-BE20-43A6-8911-EA717BE97784}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
