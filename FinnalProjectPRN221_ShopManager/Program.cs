@@ -8,6 +8,7 @@ builder.Services.AddRazorPages();
 var connectionString = builder.Configuration.GetConnectionString("MyComDB");
 builder.Services.AddDbContext<ShopManagementContext>(options =>
     options.UseSqlServer(connectionString));
+builder.Services.AddHttpContextAccessor();
 var app = builder.Build();
 
 

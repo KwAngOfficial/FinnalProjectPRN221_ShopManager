@@ -1,5 +1,6 @@
 ﻿@page "/Products/List"
 @using FinnalProjectPRN221_ShopManager.Model;
+
 @model FinnalProjectPRN221_ShopManager.Pages.ProductsModel
 @{
 }
@@ -27,6 +28,7 @@
                 li a:hover {
                     background-color: #ccc;
                 }</style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <h2>
@@ -42,9 +44,16 @@
     </ul>
     <h2>List of Products </h2>
     <a href="/ViewCart">ViewCart</a>
+    <form method="post">
+        @Html.AntiForgeryToken()
+        <input type="search" name="searchItem" />
+        <button type="submit">Search Product</button>
+    </form>
+ 
     <div>
         <table>
             <tr>
+                <td style="font-weight: bold">Image</td>
                 <td style="font-weight: bold">Product Name</td>
                 <td style="font-weight: bold">UnitPrice</td>
                 <td style="font-weight: bold">QuantityPerUnit</td>
@@ -54,20 +63,38 @@
             @foreach (Product item in Model.products)
             {
                 <tr id="@item.ProductId">
+                    <td>@item.ProductImages</td>
                     <td>@item.ProductName</td>
                     <td>@item.Price</td>
                     <td>@item.Quantity</td>
-                    <td>@item.Category.CategoryName</td>
+                    <td>@item.Category.CategoryName</td>  
 
                     <td>
-                        <form method="post">
-                            <input type="hidden" name="productId" value="@item.ProductId">
-                            <button type="submit">AddToCart</button>
-                        </form>
+                    <td>
+                        <!-- Sử dụng JavaScript và AJAX để xử lý chức năng "AddToCart" -->
+                        <button type="button" class="addToCartBtn" data-product-id="@item.ProductId">AddToCart</button>
                     </td>
+                    
                 </tr>
             }
         </table>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const addToCartBtn = document.querySelector('.addToCartBtn');
+            addToCartBtn.addEventListener('click', function () {
+                const productId = addToCartBtn.getAttribute('data-product-id');
 
+                // Gọi hàm thêm sản phẩm vào giỏ hàng ở đây
+                addToCart(productId);
+            });
+
+            function addToCart(productId) {
+                // Thực hiện thêm sản phẩm vào giỏ hàng bằng SingleR hoặc các phương pháp xử lý dữ liệu khác ở đây
+
+                // Ví dụ sử dụng SingleR để thêm sản phẩm vào giỏ hàng
+                // ...
+            }
+        });
+    </script>
 </body>

@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace FinnalProjectPRN221_ShopManager.Pages
 {
-    public class AddToCartModel : PageModel
+    public class CartModel : PageModel
     {
         public void OnGet()
         {
