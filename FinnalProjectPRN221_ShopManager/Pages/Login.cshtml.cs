@@ -13,8 +13,8 @@ namespace FinnalProjectPRN221_ShopManager.Pages
         {
             _context = context;
         }
-      
-        public void OnGet(int idProduct = 0)
+        public List<OrderDetail> orders = new List<OrderDetail>();
+        public void OnGet(int? idProduct)
         {
             if (idProduct != 0)
             {
@@ -32,7 +32,9 @@ namespace FinnalProjectPRN221_ShopManager.Pages
                         _context.OrderDetails.Add(newItem);
                         _context.SaveChanges();
                     }
+                
             }
+            orders = _context.OrderDetails.Include(x => x.Product).Include(y => y.Order).ToList();
         }
     }
 }

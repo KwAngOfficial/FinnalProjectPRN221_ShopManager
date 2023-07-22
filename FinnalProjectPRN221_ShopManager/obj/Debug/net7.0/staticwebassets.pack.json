@@ -1,6 +1,542 @@
 {
   "Files": [
     {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\css\\animate.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\animate.min.css"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\css\\flaticon.css",
+      "PackagePath": "staticwebassets\\assets\\css\\flaticon.css"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\css\\fontawesome-all.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\fontawesome-all.min.css"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\css\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\assets\\css\\magnific-popup.css"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\css\\nice-select.css",
+      "PackagePath": "staticwebassets\\assets\\css\\nice-select.css"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\css\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\owl.carousel.min.css"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\css\\price_rangs.css",
+      "PackagePath": "staticwebassets\\assets\\css\\price_rangs.css"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\css\\slick.css",
+      "PackagePath": "staticwebassets\\assets\\css\\slick.css"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\css\\slicknav.css",
+      "PackagePath": "staticwebassets\\assets\\css\\slicknav.css"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\css\\style.css",
+      "PackagePath": "staticwebassets\\assets\\css\\style.css"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\css\\themify-icons.css",
+      "PackagePath": "staticwebassets\\assets\\css\\themify-icons.css"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\fonts\\Flaticon.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Flaticon.eot"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\fonts\\Flaticon.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Flaticon.svg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\fonts\\Flaticon.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Flaticon.ttf"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\fonts\\Flaticon.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Flaticon.woff"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\fonts\\Flaticon.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Flaticon.woff2"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\fonts\\Flaticond41d.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Flaticond41d.eot"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\fonts\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-brands-400.eot"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\fonts\\fa-brands-400.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-brands-400.svg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\fonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\fonts\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-brands-400.woff"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\fonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\fonts\\fa-brands-400d41d.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-brands-400d41d.eot"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\fonts\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-regular-400.eot"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\fonts\\fa-regular-400.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-regular-400.svg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\fonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\fonts\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-regular-400.woff"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\fonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\fonts\\fa-regular-400d41d.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-regular-400d41d.eot"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\fonts\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-solid-900.eot"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\fonts\\fa-solid-900.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-solid-900.svg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\fonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\fonts\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-solid-900.woff"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\fonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\fonts\\fa-solid-900d41d.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-solid-900d41d.eot"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\fonts\\themify9f24.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\themify9f24.eot"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\fonts\\themify9f24.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\themify9f24.svg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\fonts\\themify9f24.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\themify9f24.ttf"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\fonts\\themify9f24.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\themify9f24.woff"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\fonts\\themifyd41d.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\themifyd41d.eot"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\blog\\author.png",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\author.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\blog\\comment_1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\comment_1.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\blog\\comment_2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\comment_2.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\blog\\comment_3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\comment_3.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\blog\\single_blog_1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\single_blog_1.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\blog\\single_blog_2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\single_blog_2.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\blog\\single_blog_3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\single_blog_3.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\blog\\single_blog_4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\single_blog_4.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\blog\\single_blog_5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\single_blog_5.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\elements\\d.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\d.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\elements\\disabled-check.png",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\disabled-check.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\elements\\disabled-radio.png",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\disabled-radio.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\elements\\f1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\f1.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\elements\\f2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\f2.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\elements\\f3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\f3.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\elements\\f4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\f4.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\elements\\f5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\f5.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\elements\\f6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\f6.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\elements\\f7.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\f7.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\elements\\f8.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\f8.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\elements\\g1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\g1.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\elements\\g2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\g2.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\elements\\g3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\g3.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\elements\\g4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\g4.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\elements\\g5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\g5.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\elements\\g6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\g6.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\elements\\g7.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\g7.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\elements\\g8.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\g8.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\elements\\primary-check.png",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\primary-check.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\elements\\primary-radio.png",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\primary-radio.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\elements\\success-check.png",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\success-check.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\elements\\success-radio.png",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\success-radio.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\gallery\\best-books1.html",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\best-books1.html"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\gallery\\best_selling1.html",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\best_selling1.html"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\gallery\\blog1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\blog1.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\gallery\\blog2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\blog2.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\gallery\\blog3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\blog3.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\gallery\\card.html",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\card.html"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\gallery\\founder-img.png",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\founder-img.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\gallery\\items1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\items1.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\gallery\\items2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\items2.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\gallery\\items3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\items3.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\gallery\\latest1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\latest1.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\gallery\\latest2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\latest2.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\gallery\\latest3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\latest3.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\gallery\\latest4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\latest4.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\gallery\\latest5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\latest5.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\gallery\\latest6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\latest6.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\gallery\\latest7.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\latest7.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\gallery\\latest8.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\latest8.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\hero\\h1_hero.html",
+      "PackagePath": "staticwebassets\\assets\\img\\hero\\h1_hero.html"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\hero\\h1_hero1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\hero\\h1_hero1.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\hero\\h1_hero2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\hero\\h1_hero2.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\icon\\favicon.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\favicon.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\icon\\loder.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\loder.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\icon\\services1.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\services1.svg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\icon\\services2.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\services2.svg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\icon\\services3.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\services3.svg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\icon\\services4.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\services4.svg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\logo\\logo.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logo\\logo.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\logo\\logo2_footer.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logo\\logo2_footer.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\post\\next.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\post\\next.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\post\\post_1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\post\\post_1.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\post\\post_10.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\post\\post_10.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\post\\post_2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\post\\post_2.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\post\\post_3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\post\\post_3.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\post\\post_4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\post\\post_4.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\post\\post_5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\post\\post_5.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\post\\post_6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\post\\post_6.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\post\\post_7.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\post\\post_7.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\post\\post_8.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\post\\post_8.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\post\\post_9.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\post\\post_9.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\post\\preview.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\post\\preview.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\js\\contact.js",
+      "PackagePath": "staticwebassets\\assets\\js\\contact.js"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\js\\jquery.ajaxchimp.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.ajaxchimp.min.js"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\js\\jquery.counterup.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.counterup.min.js"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\js\\jquery.form.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.form.js"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\js\\jquery.magnific-popup.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.magnific-popup.js"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\js\\jquery.nice-select.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.nice-select.min.js"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\js\\jquery.slicknav.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.slicknav.min.js"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\js\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.validate.min.js"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\js\\mail-script.js",
+      "PackagePath": "staticwebassets\\assets\\js\\mail-script.js"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\js\\main.js",
+      "PackagePath": "staticwebassets\\assets\\js\\main.js"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\js\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\owl.carousel.min.js"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\js\\plugins.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins.js"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\popper.min.js"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\js\\price_rangs.js",
+      "PackagePath": "staticwebassets\\assets\\js\\price_rangs.js"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\js\\slick.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\slick.min.js"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\js\\vendor\\jquery-1.12.4.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\vendor\\jquery-1.12.4.min.js"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\js\\vendor\\modernizr-3.5.0.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\vendor\\modernizr-3.5.0.min.js"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\js\\waypoints.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\waypoints.min.js"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\js\\wow.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\wow.min.js"
+    },
+    {
       "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\css\\main.css",
       "PackagePath": "staticwebassets\\css\\main.css"
     },
@@ -335,6 +871,14 @@
     {
       "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\lib\\easing\\easing.min.js",
       "PackagePath": "staticwebassets\\lib\\easing\\easing.min.js"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\lib\\microsoft\\signalr\\dist\\browser\\signalr.js",
+      "PackagePath": "staticwebassets\\lib\\microsoft\\signalr\\dist\\browser\\signalr.js"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\lib\\microsoft\\signalr\\dist\\browser\\signalr.min.js",
+      "PackagePath": "staticwebassets\\lib\\microsoft\\signalr\\dist\\browser\\signalr.min.js"
     },
     {
       "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\lib\\owlcarousel\\LICENSE",

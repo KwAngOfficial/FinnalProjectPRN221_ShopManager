@@ -274,6 +274,21 @@ public partial class ShopManagementContext : DbContext
 
         OnModelCreatingPartial(modelBuilder);
     }
+    private readonly IHttpContextAccessor _httpContextAccessor;
+    public ShopManagementContext(DbContextOptions<ShopManagementContext> options, IHttpContextAccessor httpContextAccessor)
+           : base(options)
+    {
+        _httpContextAccessor = httpContextAccessor;
+    }
+    public string GetSessionValue(string key)
+    {
+        return _httpContextAccessor.HttpContext.Session.GetString(key);
+    }
 
+    // Custom phương thức để lưu thông tin vào session
+    public void SetSessionValue(string key, string value)
+    {
+        _httpContextAccessor.HttpContext.Session.SetString(key, value);
+    }
     partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
 }

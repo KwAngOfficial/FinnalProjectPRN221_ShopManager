@@ -1,82 +1,82 @@
 ﻿using FinnalProjectPRN221_ShopManager.Model;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
-
+using X.PagedList;
+using Newtonsoft.Json;
 
 namespace FinnalProjectPRN221_ShopManager.Pages
 {
     public class ProductsModel : PageModel
     {
         private readonly ShopManagementContext _context;
-        public ProductsModel(ShopManagementContext context)
-        {
-            _context = context;
-            _httpContextAccessor = httpContextAccessor;
-        }
         public List<Product> lstProductAddtoCart = new List<Product>();
         public List<Product> products = new List<Product>();
         public List<Category> categories = new List<Category>();
+        public List<ProductImage> productsImage;
         private readonly IHttpContextAccessor _httpContextAccessor;
+        private List<OrderDetail> cartItems = new List<OrderDetail>();
+        public IPagedList<Product> PagedProducts { get; set; }
+        int pageSize = 2;
 
-        public void OnGet(int? CategoryId)
+        public ProductsModel(ShopManagementContext context)
+        {
+            _context = context;
+        }
+        
+        public void OnGet(int? CategoryId, int pageNumber)
         {
             categories = _context.Categories.ToList();
+            productsImage = _context.ProductImages.ToList();
             if (CategoryId != null)
             {
-                products = _context.Products.Include(x => x.ProductImages).Where(x => x.CategoryId == CategoryId).ToList();
+                products = _context.Products.Include(x => x.Category).Where(x => x.CategoryId == CategoryId).ToList();
             }
             else
             {
-                products = _context.Products.Include(x=>x.ProductImages).ToList();
+                products = _context.Products.Include(x=>x.Category).ToList();
             }
-        }
-        public IActionResult OnPost(string searchItem)
-        {
-            categories = _context.Categories.ToList();
-
-            if (!string.IsNullOrEmpty(searchItem))
+            
+            // Thêm chức năng phân trang
+            if (pageNumber != 0)
             {
-                products = _context.Products
-                    .Include(x => x.Category)
-                    .Where(x => x.ProductName.Contains(searchItem))
-                    .ToList();
+                // Số sản phẩm hiển thị trên mỗi trang
+                PagedProducts = products.ToPagedList(pageNumber, pageSize);
             }
             else
             {
-                products = _context.Products
-                    .Include(x => x.Category)
-                    .ToList();
+                PagedProducts = products.ToPagedList(1, pageSize);
             }
-
-            return Page();
+            
         }
-        private List<OrderDetail> cartItems = new List<OrderDetail>();
-        public void OnGetSearch(string? searchItem)
+        
+        public IActionResult OnPost(string? searchItem, int pageNumber, int? productId)
         {
             categories = _context.Categories.ToList();
             products = _context.Products.Include(x=>x.Category).Where(x=>x.ProductName.Contains(searchItem)).ToList();
-            //Product p = _context.Products.Where(x => x.ProductName == name).FirstOrDefault(); 
-            //var newItem = new OrderDetail
-            //{
-            //    OrderId = cartItems.Count + 1,
-            //    ProductId = p.ProductId,
-            //    Price = price,
-            //};
-        }
-        public IActionResult OnPostAddToCart(int productId)
-        {
-            var product = _context.Products.Find(productId);
-            if (product == null)
+            // Thêm chức năng phân trang
+            if (pageNumber != 0)
             {
-                return NotFound();
+                // Số sản phẩm hiển thị trên mỗi trang
+                PagedProducts = products.ToPagedList(pageNumber, pageSize);
+            }
+            else
+            {
+                PagedProducts = products.ToPagedList(1, pageSize);
             }
 
-            // Lấy danh sách sản phẩm đã được lưu trong session (nếu có)
-            List<Product> cartProducts = _httpContextAccessor.HttpContext.Session.Get<List<Product>>("CartProducts") ?? new List<Product>();
+            // Add to cart
+            var product = _context.Products.Find(productId);
 
-            // Kiểm tra nếu sản phẩm đã có trong giỏ hàng, thì tăng số lượng
+            // Lấy danh sách sản phẩm đã được lưu trong session (nếu có)
+            List<Product> cartProducts = new List<Product>();
+            var cartProductsJson = HttpContext.Session.GetString("CartProducts");
+            if (!string.IsNullOrEmpty(cartProductsJson))
+            {
+                cartProducts = JsonConvert.DeserializeObject<List<Product>>(cartProductsJson);
+            }
+
+            // Kiểm tra xem sản phẩm đã có trong giỏ hàng hay chưa
             var existingProduct = cartProducts.Find(p => p.ProductId == productId);
             if (existingProduct != null)
             {
@@ -84,16 +84,19 @@ namespace FinnalProjectPRN221_ShopManager.Pages
             }
             else
             {
-                // Nếu sản phẩm chưa có trong giỏ hàng, thêm sản phẩm mới
+                // Nếu sản phẩm chưa có trong giỏ hàng, thêm sản phẩm mới vào giỏ hàng
                 product.Quantity = 1;
                 cartProducts.Add(product);
             }
-
-            // Lưu danh sách sản phẩm vào session
-            _httpContextAccessor.HttpContext.Session.Set("CartProducts", cartProducts);
-
-            // Trả về kết quả thành công
-            return new JsonResult("Success");
+            var settings = new JsonSerializerSettings
+            {
+                ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+            };
+            var serializedJson = JsonConvert.SerializeObject(cartProducts, settings);
+            // Lưu danh sách sản phẩm vào session sau khi đã thay đổi
+            HttpContext.Session.SetString("CartProducts", serializedJson);
+            _context.SetSessionValue("test1", "Session test");
+            return Redirect("/Products/List");
         }
     }
 }

@@ -7,10 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="Pages\AddToCart.cshtml" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.7">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -20,6 +16,9 @@
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.8" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="X.PagedList" Version="8.4.7" />
+    <PackageReference Include="X.PagedList.Mvc.Core" Version="8.4.7" />
   </ItemGroup>
 
   <ItemGroup>
@@ -29,7 +28,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="Pages\AddToCart.cshtml" />
     <None Include="wwwroot\css\main.css" />
     <None Include="wwwroot\css\util.css" />
     <None Include="wwwroot\fonts\font-awesome-4.7.0\css\font-awesome.css" />
@@ -148,18 +146,6 @@
     <None Include="wwwroot\vendor\select2\select2.js" />
     <None Include="wwwroot\vendor\select2\select2.min.css" />
     <None Include="wwwroot\vendor\select2\select2.min.js" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Hubs\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <UpToDateCheckInput Remove="Pages\AddToCart.cshtml" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <_ContentIncludedByDefault Remove="Pages\AddToCart.cshtml" />
   </ItemGroup>
 
 </Project>

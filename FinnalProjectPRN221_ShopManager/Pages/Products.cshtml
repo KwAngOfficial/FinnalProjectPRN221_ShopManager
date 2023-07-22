@@ -1,100 +1,1192 @@
 ﻿@page "/Products/List"
 @using FinnalProjectPRN221_ShopManager.Model;
+@using X.PagedList.Mvc.Core;
 
 @model FinnalProjectPRN221_ShopManager.Pages.ProductsModel
 @{
 }
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<!-- Mirrored from preview.colorlib.com/theme/capitalshop/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 21 Jul 2023 19:13:13 GMT -->
 <head>
-    <style>
-        ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Shop | eCommers</title>
+    <meta name="description" content>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="~/assets/img/icon/favicon.png">
 
-        li {
-            display: inline-block;
-            margin-right: 10px;
-        }
-
-            li a {
-                text-decoration: none;
-                padding: 5px 10px;
-                border: 1px solid #ccc;
-                background-color: #f0f0f0;
-                color: #333;
-            }
-
-                li a:hover {
-                    background-color: #ccc;
-                }</style>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="~/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/assets/css/slicknav.css">
+    <link rel="stylesheet" href="~/assets/css/flaticon.css">
+    <link rel="stylesheet" href="~/assets/css/animate.min.css">
+    <link rel="stylesheet" href="~/assets/css/price_rangs.css">
+    <link rel="stylesheet" href="~/assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="~/assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="~/assets/css/themify-icons.css">
+    <link rel="stylesheet" href="~/assets/css/slick.css">
+    <link rel="stylesheet" href="~/assets/css/nice-select.css">
+    <link rel="stylesheet" href="~/assets/css/style.css">
+    <script nonce="46fc1f2e-17e7-4c31-8c71-02a6e8329eb2">(function (w, d) { !function (a, b, c, d) { a[c] = a[c] || {}; a[c].executed = []; a.zaraz = { deferred: [], listeners: [] }; a.zaraz.q = []; a.zaraz._f = function (e) { return function () { var f = Array.prototype.slice.call(arguments); a.zaraz.q.push({ m: e, a: f }) } }; for (const g of ["track", "set", "debug"]) a.zaraz[g] = a.zaraz._f(g); a.zaraz.init = () => { var h = b.getElementsByTagName(d)[0], i = b.createElement(d), j = b.getElementsByTagName("title")[0]; j && (a[c].t = b.getElementsByTagName("title")[0].text); a[c].x = Math.random(); a[c].w = a.screen.width; a[c].h = a.screen.height; a[c].j = a.innerHeight; a[c].e = a.innerWidth; a[c].l = a.location.href; a[c].r = b.referrer; a[c].k = a.screen.colorDepth; a[c].n = b.characterSet; a[c].o = (new Date).getTimezoneOffset(); if (a.dataLayer) for (const n of Object.entries(Object.entries(dataLayer).reduce(((o, p) => ({ ...o[1], ...p[1] })), {}))) zaraz.set(n[0], n[1], { scope: "page" }); a[c].q = []; for (; a.zaraz.q.length;) { const q = a.zaraz.q.shift(); a[c].q.push(q) } i.defer = !0; for (const r of [localStorage, sessionStorage]) Object.keys(r || {}).filter((t => t.startsWith("_zaraz_"))).forEach((s => { try { a[c]["z_" + s.slice(7)] = JSON.parse(r.getItem(s)) } catch { a[c]["z_" + s.slice(7)] = r.getItem(s) } })); i.referrerPolicy = "origin"; i.src = "../../cdn-cgi/zaraz/sd0d9.js?z=" + btoa(encodeURIComponent(JSON.stringify(a[c]))); h.parentNode.insertBefore(i, h) };["complete", "interactive"].includes(b.readyState) ? zaraz.init() : a.addEventListener("DOMContentLoaded", zaraz.init) }(w, d, "zarazData", "script"); })(window, document);</script>
 </head>
 <body>
-    <h2>
-        List of Category
-    </h2>
-    <ul>
-        @foreach (Category cate in Model.categories)
-        {
 
-            <li><a href="/Products/List?CategoryId=@cate.CategoryId">@cate.CategoryName</a></li>
-
-        }
-    </ul>
-    <h2>List of Products </h2>
-    <a href="/ViewCart">ViewCart</a>
-    <form method="post">
-        @Html.AntiForgeryToken()
-        <input type="search" name="searchItem" />
-        <button type="submit">Search Product</button>
-    </form>
- 
-    <div>
-        <table>
-            <tr>
-                <td style="font-weight: bold">Image</td>
-                <td style="font-weight: bold">Product Name</td>
-                <td style="font-weight: bold">UnitPrice</td>
-                <td style="font-weight: bold">QuantityPerUnit</td>
-                <td style="font-weight: bold">Category</td>
-                <td></td>
-            </tr>
-            @foreach (Product item in Model.products)
-            {
-                <tr id="@item.ProductId">
-                    <td>@item.ProductImages</td>
-                    <td>@item.ProductName</td>
-                    <td>@item.Price</td>
-                    <td>@item.Quantity</td>
-                    <td>@item.Category.CategoryName</td>  
-
-                    <td>
-                    <td>
-                        <!-- Sử dụng JavaScript và AJAX để xử lý chức năng "AddToCart" -->
-                        <button type="button" class="addToCartBtn" data-product-id="@item.ProductId">AddToCart</button>
-                    </td>
-                    
-                </tr>
-            }
-        </table>
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="~/assets/img/icon/loder.png" alt="loder">
+                </div>
+            </div>
+        </div>
     </div>
+
+    <header>
+        <div class="header-area">
+            <div class="header-top d-none d-sm-block">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="d-flex justify-content-between flex-wrap align-items-center">
+                                <div class="header-info-left">
+                                    <ul>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Privacy</a></li>
+                                        <li><a href="#">FAQ</a></li>
+                                        <li><a href="#">Careers</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header-info-right d-flex">
+                                    <ul class="order-list">
+                                        <li><a href="#">My Wishlist</a></li>
+                                        <li><a href="#">Track Your Order</a></li>
+                                    </ul>
+                                    <ul class="header-social">
+                                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                        <li> <a href="#"><i class="fab fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                        <li> <a href="#"><i class="fab fa-youtube"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-mid header-sticky">
+                <div class="container">
+                    <div class="menu-wrapper">
+
+                        <div class="logo">
+                            <a href="index-2.html"><img src="~/assets/img/logo/logo.png" alt></a>
+                        </div>
+
+                        <div class="main-menu d-none d-lg-block">
+                            <nav>
+                                <ul id="navigation">
+                                    <li><a href="index-2.html">Home</a></li>
+                                    <li><a href="categories.html">Men</a></li>
+                                    <li><a href="categories.html">Women</a></li>
+                                    <li class="new"><a href="categories.html">Baby Collection</a></li>
+                                    <li>
+                                        <a href="#">Pages <i class="fas fa-angle-down"></i></a>
+                                        <ul class="submenu">
+                                            <li><a href="login.html">Login</a></li>
+                                            <li><a href="/ViewCart">Cart</a></li>
+                                            <li><a href="pro-details.html">Product Details</a></li>
+                                            <li><a href="checkout.html">Product Checkout</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="blog.html">Blog</a>
+                                        <ul class="submenu">
+                                            <li><a href="blog.html">Blog</a></li>
+                                            <li><a href="elements.html">Element</a></li>
+                                            <li><a href="blog-details.html">Blog Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="header-right">
+                            <ul>
+                                <li>
+                                    <div class="nav-search search-switch hearer_icon">
+                                        <a id="search_1" href="javascript:void(0)">
+                                            <span class="flaticon-search"></span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li> <a href="login.html"><span class="flaticon-user"></span></a></li>
+                                <li class="cart"><a href="/ViewCart"><span class="flaticon-shopping-cart"></span></a> </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="search_input" id="search_input_box">
+                        @*<form method="post">
+                            <input type="search"  />
+                            <button type="submit">Search Product</button>
+                        </form>*@
+                        <form method="get" class="search-inner d-flex justify-content-between ">
+                            @Html.AntiForgeryToken()
+                            <input type="text" name="searchItem" class="form-control" placeholder="Search Here">
+                            <button type="submit" class="btn"></button>
+                            <span class="ti-close" id="close_search" title="Close Search"></span>
+                        </form>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="mobile_menu d-block d-lg-none"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom text-center">
+                <p>Sale Up To 50% Biggest Discounts. Hurry! Limited Perriod Offer <a href="#" class="browse-btn">Shop Now</a></p>
+            </div>
+        </div>
+    </header>
+    <main>
+
+        <section class="slider-area ">
+            <div class="slider-active">
+
+                <div class="single-slider slider-bg1 slider-height d-flex align-items-center">
+                    <div class="container">
+                        <div class="rowr">
+                            <div class="col-xxl-5 col-xl-6 col-lg-7 col-md-8  col-sm-10">
+                                <div class="hero-caption text-center">
+                                    <span>Fashion Sale</span>
+                                    <h1 data-animation="bounceIn" data-delay="0.2s">Minimal Menz Style</h1>
+                                    <p data-animation="fadeInUp" data-delay="0.4s">Consectetur adipisicing elit. Laborum fuga incidunt laboriosam voluptas iure, delectus dignissimos facilis neque nulla earum.</p>
+                                    <a href="#" class="btn_1 hero-btn" data-animation="fadeInUp" data-delay="0.7s">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="single-slider slider-bg2 slider-height d-flex align-items-center">
+                    <div class="container">
+                        <div class="row justify-content-end">
+                            <div class="col-xxl-5 col-xl-6 col-lg-7 col-md-8 col-sm-10">
+                                <div class="hero-caption text-center">
+                                    <span>Fashion Sale</span>
+                                    <h1 data-animation="bounceIn" data-delay="0.2s">Minimal Menz Style</h1>
+                                    <p data-animation="fadeInUp" data-delay="0.4s">Consectetur adipisicing elit. Laborum fuga incidunt laboriosam voluptas iure, delectus dignissimos facilis neque nulla earum.</p>
+                                    <a href="#" class="btn_1 hero-btn" data-animation="fadeInUp" data-delay="0.7s">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="items-product1 pt-30">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                        <div class="single-items mb-20">
+                            <div class="items-img">
+                                <img src="~/assets/img/gallery/items1.jpg" alt>
+                            </div>
+                            <div class="items-details">
+                                <h4><a href="pro-details.html">Men's Fashion</a></h4>
+                                <a href="pro-details.html" class="browse-btn">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                        <div class="single-items mb-20">
+                            <div class="items-img">
+                                <img src="~/assets/img/gallery/items2.jpg" alt>
+                            </div>
+                            <div class="items-details">
+                                <h4><a href="pro-details.html">Women's Fashion</a></h4>
+                                <a href="pro-details.html" class="browse-btn">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                        <div class="single-items mb-20">
+                            <div class="items-img">
+                                <img src="~/assets/img/gallery/items3.jpg" alt>
+                            </div>
+                            <div class="items-details">
+                                <h4><a href="pro-details.html">Baby Fashion</a></h4>
+                                <a href="pro-details.html" class="browse-btn">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="latest-items section-padding fix">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-xl-12">
+                        <div class="nav-button">
+
+                            <nav>
+                                <div class="nav-tittle">
+                                    <h2>Trending This Week</h2>
+                                </div>
+                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                    <div class"col-md-4">
+                                        @foreach (Category cate in Model.categories)
+                                        {
+                                            <a class="nav-link active" data-bs-toggle="tab" href="/Products/List?CategoryId=@cate.CategoryId" role="tab" aria-controls="nav-one" aria-selected="true">@cate.CategoryName</a>
+                                        }
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-one" role="tabpanel" aria-labelledby="nav-one-tab">
+
+                        <div class="latest-items-active">
+                            @foreach (Product item in Model.PagedProducts)
+                            {
+                                @*<div class="pagination">
+                            @Html.PagedListPager(Model.PagedProducts, page => Url.Page("Products", new { pageNumber = page }))
+                            </div>*@
+
+                                <div class="properties pb-30" id="@item.ProductId">
+                                    <div class="properties-card">
+                                        <div class="properties-img">
+                                            <a href="pro-details.html"><img src="@Model.productsImage[@item.ProductId-1].ImageProduct" alt></a>
+                                        </div>
+                                        <div class="properties-caption properties-caption2">
+                                            <h3><a href="pro-details.html">@item.ProductName</a></h3>
+                                            <div class="properties-footer">
+                                                <div class="price">
+                                                    <span>@item.Price vnđ<span>@(@item.Price+(@item.Price*30/100))</span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bottom_button">
+                                            <a class="btn">
+                                                <form method="post">
+                                                    <input type="hidden" value="@item.ProductId" name="productId">
+                                                    <button id="@item.ProductId"></button>
+                                                </form>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-two" role="tabpanel" aria-labelledby="nav-two-tab">
+
+                        <div class="latest-items-active">
+
+                            <div class="properties pb-30">
+                                <div class="properties-card">
+                                    <div class="properties-img">
+                                        <a href="pro-details.html"><img src="~/assets/img/gallery/latest1.jpg" alt></a>
+                                        <div class="socal_icon">
+                                            <a href="#"><i class="ti-shopping-cart"></i></a>
+                                            <a href="#"><i class="ti-heart"></i></a>
+                                            <a href="#"><i class="ti-zoom-in"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="properties-caption properties-caption2">
+                                        <h3><a href="pro-details.html">Cashmere Tank + Bag</a></h3>
+                                        <div class="properties-footer">
+                                            <div class="price">
+                                                <span>$98.00 <span>$120.00</span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="properties pb-30">
+                                <div class="properties-card">
+                                    <div class="properties-img">
+                                        <a href="pro-details.html"><img src="~/assets/img/gallery/latest2.jpg" alt></a>
+                                        <div class="socal_icon">
+                                            <a href="#"><i class="ti-shopping-cart"></i></a>
+                                            <a href="#"><i class="ti-heart"></i></a>
+                                            <a href="#"><i class="ti-zoom-in"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="properties-caption properties-caption2">
+                                        <h3><a href="pro-details.html">Cashmere Tank + Bag</a></h3>
+                                        <div class="properties-footer">
+                                            <div class="price">
+                                                <span>$98.00 <span>$120.00</span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="properties pb-30">
+                                <div class="properties-card">
+                                    <div class="properties-img">
+                                        <a href="pro-details.html"><img src="~/assets/img/gallery/latest3.jpg" alt></a>
+                                        <div class="socal_icon">
+                                            <a href="#"><i class="ti-shopping-cart"></i></a>
+                                            <a href="#"><i class="ti-heart"></i></a>
+                                            <a href="#"><i class="ti-zoom-in"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="properties-caption properties-caption2">
+                                        <h3><a href="pro-details.html">Cashmere Tank + Bag</a></h3>
+                                        <div class="properties-footer">
+                                            <div class="price">
+                                                <span>$98.00 <span>$120.00</span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="properties pb-30">
+                                <div class="properties-card">
+                                    <div class="properties-img">
+                                        <a href="pro-details.html"><img src="~/assets/img/gallery/latest4.jpg" alt></a>
+                                        <div class="socal_icon">
+                                            <a href="#"><i class="ti-shopping-cart"></i></a>
+                                            <a href="#"><i class="ti-heart"></i></a>
+                                            <a href="#"><i class="ti-zoom-in"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="properties-caption properties-caption2">
+                                        <h3><a href="pro-details.html">Cashmere Tank + Bag</a></h3>
+                                        <div class="properties-footer">
+                                            <div class="price">
+                                                <span>$98.00 <span>$120.00</span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="properties pb-30">
+                                <div class="properties-card">
+                                    <div class="properties-img">
+                                        <a href="pro-details.html"><img src="~/assets/img/gallery/latest2.jpg" alt></a>
+                                        <div class="socal_icon">
+                                            <a href="#"><i class="ti-shopping-cart"></i></a>
+                                            <a href="#"><i class="ti-heart"></i></a>
+                                            <a href="#"><i class="ti-zoom-in"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="properties-caption properties-caption2">
+                                        <h3><a href="pro-details.html">Cashmere Tank + Bag</a></h3>
+                                        <div class="properties-footer">
+                                            <div class="price">
+                                                <span>$98.00 <span>$120.00</span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="properties pb-30">
+                                <div class="properties-card">
+                                    <div class="properties-img">
+                                        <a href="pro-details.html"><img src="~/assets/img/gallery/latest4.jpg" alt></a>
+                                        <div class="socal_icon">
+                                            <a href="#"><i class="ti-shopping-cart"></i></a>
+                                            <a href="#"><i class="ti-heart"></i></a>
+                                            <a href="#"><i class="ti-zoom-in"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="properties-caption properties-caption2">
+                                        <h3><a href="pro-details.html">Cashmere Tank + Bag</a></h3>
+                                        <div class="properties-footer">
+                                            <div class="price">
+                                                <span>$98.00 <span>$120.00</span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-three" role="tabpanel" aria-labelledby="nav-three-tab">
+
+                        <div class="latest-items-active">
+
+                            <div class="properties pb-30">
+                                <div class="properties-card">
+                                    <div class="properties-img">
+                                        <a href="pro-details.html"><img src="~/assets/img/gallery/latest1.jpg" alt></a>
+                                        <div class="socal_icon">
+                                            <a href="#"><i class="ti-shopping-cart"></i></a>
+                                            <a href="#"><i class="ti-heart"></i></a>
+                                            <a href="#"><i class="ti-zoom-in"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="properties-caption properties-caption2">
+                                        <h3><a href="pro-details.html">Cashmere Tank + Bag</a></h3>
+                                        <div class="properties-footer">
+                                            <div class="price">
+                                                <span>$98.00 <span>$120.00</span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="properties pb-30">
+                                <div class="properties-card">
+                                    <div class="properties-img">
+                                        <a href="pro-details.html"><img src="~/assets/img/gallery/latest2.jpg" alt></a>
+                                        <div class="socal_icon">
+                                            <a href="#"><i class="ti-shopping-cart"></i></a>
+                                            <a href="#"><i class="ti-heart"></i></a>
+                                            <a href="#"><i class="ti-zoom-in"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="properties-caption properties-caption2">
+                                        <h3><a href="pro-details.html">Cashmere Tank + Bag</a></h3>
+                                        <div class="properties-footer">
+                                            <div class="price">
+                                                <span>$98.00 <span>$120.00</span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="properties pb-30">
+                                <div class="properties-card">
+                                    <div class="properties-img">
+                                        <a href="pro-details.html"><img src="~/assets/img/gallery/latest3.jpg" alt></a>
+                                        <div class="socal_icon">
+                                            <a href="#"><i class="ti-shopping-cart"></i></a>
+                                            <a href="#"><i class="ti-heart"></i></a>
+                                            <a href="#"><i class="ti-zoom-in"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="properties-caption properties-caption2">
+                                        <h3><a href="pro-details.html">Cashmere Tank + Bag</a></h3>
+                                        <div class="properties-footer">
+                                            <div class="price">
+                                                <span>$98.00 <span>$120.00</span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="properties pb-30">
+                                <div class="properties-card">
+                                    <div class="properties-img">
+                                        <a href="pro-details.html"><img src="~/assets/img/gallery/latest4.jpg" alt></a>
+                                        <div class="socal_icon">
+                                            <a href="#"><i class="ti-shopping-cart"></i></a>
+                                            <a href="#"><i class="ti-heart"></i></a>
+                                            <a href="#"><i class="ti-zoom-in"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="properties-caption properties-caption2">
+                                        <h3><a href="pro-details.html">Cashmere Tank + Bag</a></h3>
+                                        <div class="properties-footer">
+                                            <div class="price">
+                                                <span>$98.00 <span>$120.00</span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="properties pb-30">
+                                <div class="properties-card">
+                                    <div class="properties-img">
+                                        <a href="pro-details.html"><img src="~/assets/img/gallery/latest2.jpg" alt></a>
+                                        <div class="socal_icon">
+                                            <a href="#"><i class="ti-shopping-cart"></i></a>
+                                            <a href="#"><i class="ti-heart"></i></a>
+                                            <a href="#"><i class="ti-zoom-in"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="properties-caption properties-caption2">
+                                        <h3><a href="pro-details.html">Cashmere Tank + Bag</a></h3>
+                                        <div class="properties-footer">
+                                            <div class="price">
+                                                <span>$98.00 <span>$120.00</span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="properties pb-30">
+                                <div class="properties-card">
+                                    <div class="properties-img">
+                                        <a href="pro-details.html"><img src="~/assets/img/gallery/latest4.jpg" alt></a>
+                                        <div class="socal_icon">
+                                            <a href="#"><i class="ti-shopping-cart"></i></a>
+                                            <a href="#"><i class="ti-heart"></i></a>
+                                            <a href="#"><i class="ti-zoom-in"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="properties-caption properties-caption2">
+                                        <h3><a href="pro-details.html">Cashmere Tank + Bag</a></h3>
+                                        <div class="properties-footer">
+                                            <div class="price">
+                                                <span>$98.00 <span>$120.00</span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-four" role="tabpanel" aria-labelledby="nav-four-tab">
+
+                        <div class="latest-items-active">
+
+                            <div class="properties pb-30">
+                                <div class="properties-card">
+                                    <div class="properties-img">
+                                        <a href="pro-details.html"><img src="~/assets/img/gallery/latest1.jpg" alt></a>
+                                        <div class="socal_icon">
+                                            <a href="#"><i class="ti-shopping-cart"></i></a>
+                                            <a href="#"><i class="ti-heart"></i></a>
+                                            <a href="#"><i class="ti-zoom-in"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="properties-caption properties-caption2">
+                                        <h3><a href="pro-details.html">Cashmere Tank + Bag</a></h3>
+                                        <div class="properties-footer">
+                                            <div class="price">
+                                                <span>$98.00 <span>$120.00</span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="properties pb-30">
+                                <div class="properties-card">
+                                    <div class="properties-img">
+                                        <a href="pro-details.html"><img src="~/assets/img/gallery/latest2.jpg" alt></a>
+                                        <div class="socal_icon">
+                                            <a href="#"><i class="ti-shopping-cart"></i></a>
+                                            <a href="#"><i class="ti-heart"></i></a>
+                                            <a href="#"><i class="ti-zoom-in"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="properties-caption properties-caption2">
+                                        <h3><a href="pro-details.html">Cashmere Tank + Bag</a></h3>
+                                        <div class="properties-footer">
+                                            <div class="price">
+                                                <span>$98.00 <span>$120.00</span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="properties pb-30">
+                                <div class="properties-card">
+                                    <div class="properties-img">
+                                        <a href="pro-details.html"><img src="~/assets/img/gallery/latest3.jpg" alt></a>
+                                        <div class="socal_icon">
+                                            <a href="#"><i class="ti-shopping-cart"></i></a>
+                                            <a href="#"><i class="ti-heart"></i></a>
+                                            <a href="#"><i class="ti-zoom-in"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="properties-caption properties-caption2">
+                                        <h3><a href="pro-details.html">Cashmere Tank + Bag</a></h3>
+                                        <div class="properties-footer">
+                                            <div class="price">
+                                                <span>$98.00 <span>$120.00</span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="properties pb-30">
+                                <div class="properties-card">
+                                    <div class="properties-img">
+                                        <a href="pro-details.html"><img src="~/assets/img/gallery/latest4.jpg" alt></a>
+                                        <div class="socal_icon">
+                                            <a href="#"><i class="ti-shopping-cart"></i></a>
+                                            <a href="#"><i class="ti-heart"></i></a>
+                                            <a href="#"><i class="ti-zoom-in"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="properties-caption properties-caption2">
+                                        <h3><a href="pro-details.html">Cashmere Tank + Bag</a></h3>
+                                        <div class="properties-footer">
+                                            <div class="price">
+                                                <span>$98.00 <span>$120.00</span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="properties pb-30">
+                                <div class="properties-card">
+                                    <div class="properties-img">
+                                        <a href="pro-details.html"><img src="~/assets/img/gallery/latest2.jpg" alt></a>
+                                        <div class="socal_icon">
+                                            <a href="#"><i class="ti-shopping-cart"></i></a>
+                                            <a href="#"><i class="ti-heart"></i></a>
+                                            <a href="#"><i class="ti-zoom-in"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="properties-caption properties-caption2">
+                                        <h3><a href="pro-details.html">Cashmere Tank + Bag</a></h3>
+                                        <div class="properties-footer">
+                                            <div class="price">
+                                                <span>$98.00 <span>$120.00</span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="properties pb-30">
+                                <div class="properties-card">
+                                    <div class="properties-img">
+                                        <a href="pro-details.html"><img src="~/assets/img/gallery/latest4.jpg" alt></a>
+                                        <div class="socal_icon">
+                                            <a href="#"><i class="ti-shopping-cart"></i></a>
+                                            <a href="#"><i class="ti-heart"></i></a>
+                                            <a href="#"><i class="ti-zoom-in"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="properties-caption properties-caption2">
+                                        <h3><a href="pro-details.html">Cashmere Tank + Bag</a></h3>
+                                        <div class="properties-footer">
+                                            <div class="price">
+                                                <span>$98.00 <span>$120.00</span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="testimonial-area testimonial-padding">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-10 col-lg-10 col-md-11">
+                        <div class="h1-testimonial-active">
+
+                            <div class="single-testimonial text-center">
+                                <div class="testimonial-caption ">
+                                    <div class="testimonial-top-cap">
+                                        <h2>Customer Testimonial</h2>
+                                        <p>Everybody is different, which is why we offer styles for every body. Laborum fuga incidunt laboriosam voluptas iure, delectus dignissimos facilis neque nulla earum.</p>
+                                    </div>
+
+                                    <div class="testimonial-founder d-flex align-items-center justify-content-center">
+                                        <div class="founder-img">
+                                            <img src="~/assets/img/gallery/founder-img.png" alt>
+                                        </div>
+                                        <div class="founder-text">
+                                            <span>Petey Cruiser</span>
+                                            <p>Designer at Colorlib</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="single-testimonial text-center">
+                                <div class="testimonial-caption ">
+                                    <div class="testimonial-top-cap">
+                                        <h2>Customer Testimonial</h2>
+                                        <p>Everybody is different, which is why we offer styles for every body. Laborum fuga incidunt laboriosam voluptas iure, delectus dignissimos facilis neque nulla earum.</p>
+                                    </div>
+
+                                    <div class="testimonial-founder d-flex align-items-center justify-content-center">
+                                        <div class="founder-img">
+                                            <img src="~/assets/img/gallery/founder-img.png" alt>
+                                        </div>
+                                        <div class="founder-text">
+                                            <span>Petey Cruiser</span>
+                                            <p>Designer at Colorlib</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <section class="latest-items section-padding fix">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section-tittle text-center mb-40">
+                        <h2>You May Like</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="latest-items-active">
+
+                    <div class="properties pb-30">
+                        <div class="properties-card">
+                            <div class="properties-img">
+                                <a href="pro-details.html"><img src="~/assets/img/gallery/latest5.jpg" alt></a>
+                                <div class="socal_icon">
+                                    <a href="#"><i class="ti-shopping-cart"></i></a>
+                                    <a href="#"><i class="ti-heart"></i></a>
+                                    <a href="#"><i class="ti-zoom-in"></i></a>
+                                </div>
+                            </div>
+                            <div class="properties-caption properties-caption2">
+                                <h3><a href="pro-details.html">Cashmere Tank + Bag</a></h3>
+                                <div class="properties-footer">
+                                    <div class="price">
+                                        <span>$98.00 <span>$120.00</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="properties pb-30">
+                        <div class="properties-card">
+                            <div class="properties-img">
+                                <a href="pro-details.html"><img src="~/assets/img/gallery/latest6.jpg" alt></a>
+                                <div class="socal_icon">
+                                    <a href="#"><i class="ti-shopping-cart"></i></a>
+                                    <a href="#"><i class="ti-heart"></i></a>
+                                    <a href="#"><i class="ti-zoom-in"></i></a>
+                                </div>
+                            </div>
+                            <div class="properties-caption properties-caption2">
+                                <h3><a href="pro-details.html">Cashmere Tank + Bag</a></h3>
+                                <div class="properties-footer">
+                                    <div class="price">
+                                        <span>$98.00 <span>$120.00</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="properties pb-30">
+                        <div class="properties-card">
+                            <div class="properties-img">
+                                <a href="pro-details.html"><img src="~/assets/img/gallery/latest7.jpg" alt></a>
+                                <div class="socal_icon">
+                                    <a href="#"><i class="ti-shopping-cart"></i></a>
+                                    <a href="#"><i class="ti-heart"></i></a>
+                                    <a href="#"><i class="ti-zoom-in"></i></a>
+                                </div>
+                            </div>
+                            <div class="properties-caption properties-caption2">
+                                <h3><a href="pro-details.html">Cashmere Tank + Bag</a></h3>
+                                <div class="properties-footer">
+                                    <div class="price">
+                                        <span>$98.00 <span>$120.00</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="properties pb-30">
+                        <div class="properties-card">
+                            <div class="properties-img">
+                                <a href="pro-details.html"><img src="~/assets/img/gallery/latest8.jpg" alt></a>
+                                <div class="socal_icon">
+                                    <a href="#"><i class="ti-shopping-cart"></i></a>
+                                    <a href="#"><i class="ti-heart"></i></a>
+                                    <a href="#"><i class="ti-zoom-in"></i></a>
+                                </div>
+                            </div>
+                            <div class="properties-caption properties-caption2">
+                                <h3><a href="pro-details.html">Cashmere Tank + Bag</a></h3>
+                                <div class="properties-footer">
+                                    <div class="price">
+                                        <span>$98.00 <span>$120.00</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="properties pb-30">
+                        <div class="properties-card">
+                            <div class="properties-img">
+                                <a href="pro-details.html"><img src="~/assets/img/gallery/latest6.jpg" alt></a>
+                                <div class="socal_icon">
+                                    <a href="#"><i class="ti-shopping-cart"></i></a>
+                                    <a href="#"><i class="ti-heart"></i></a>
+                                    <a href="#"><i class="ti-zoom-in"></i></a>
+                                </div>
+                            </div>
+                            <div class="properties-caption properties-caption2">
+                                <h3><a href="pro-details.html">Cashmere Tank + Bag</a></h3>
+                                <div class="properties-footer">
+                                    <div class="price">
+                                        <span>$98.00 <span>$120.00</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="properties pb-30">
+                        <div class="properties-card">
+                            <div class="properties-img">
+                                <a href="pro-details.html"><img src="~/assets/img/gallery/latest7.jpg" alt></a>
+                                <div class="socal_icon">
+                                    <a href="#"><i class="ti-shopping-cart"></i></a>
+                                    <a href="#"><i class="ti-heart"></i></a>
+                                    <a href="#"><i class="ti-zoom-in"></i></a>
+                                </div>
+                            </div>
+                            <div class="properties-caption properties-caption2">
+                                <h3><a href="pro-details.html">Cashmere Tank + Bag</a></h3>
+                                <div class="properties-footer">
+                                    <div class="price">
+                                        <span>$98.00 <span>$120.00</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="home-blog">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="cl-xl-7 col-lg-8 col-md-10">
+
+                        <div class="section-tittle text-center mb-40">
+                            <h2>Latest News</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="single-blogs mb-30">
+                            <div class="blog-img">
+                                <a href="pro-details.html"><img src="~/assets/img/gallery/blog1.jpg" alt></a>
+                            </div>
+                            <div class="blogs-cap">
+                                <span>Fashion Tips</span>
+                                <h5><a href="pro-details.html">What Curling Irons Are The Best Ones</a></h5>
+                                <p>Consectetur adipisicing elit. Laborum fuga incidunt laboriosam voluptas iure, delectus..</p>
+                                <a href="pro-details.html" class="red-btn">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="single-blogs mb-30">
+                            <div class="blog-img">
+                                <a href="pro-details.html"><img src="~/assets/img/gallery/blog2.jpg" alt></a>
+                            </div>
+                            <div class="blogs-cap">
+                                <span>Fashion Tips</span>
+                                <h5>
+                                    <a href="pro-details.html">
+                                        Vogue's Ultimate Guide To Autumn/
+                                        Winter 2019 Shoes
+                                    </a>
+                                </h5>
+                                <p>Consectetur adipisicing elit. Laborum fuga incidunt laboriosam voluptas iure, delectus..</p>
+                                <a href="pro-details.html" class="red-btn">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="single-blogs mb-30">
+                            <div class="blog-img">
+                                <a href="pro-details.html"><img src="~/assets/img/gallery/blog3.jpg" alt></a>
+                            </div>
+                            <div class="blogs-cap">
+                                <span>Fashion Tips</span>
+                                <h5><a href="pro-details.html">What Curling Irons Are The Best Ones</a></h5>
+                                <p>Consectetur adipisicing elit. Laborum fuga incidunt laboriosam voluptas iure, delectus..</p>
+                                <a href="pro-details.html" class="red-btn">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="categories-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-cat mb-50 wow fadeInUp text-center" data-wow-duration="1s" data-wow-delay=".2s">
+                            <div class="cat-icon">
+                                <img src="~/assets/img/icon/services1.svg" alt>
+                            </div>
+                            <div class="cat-cap">
+                                <h5>Fast & Free Delivery</h5>
+                                <p>Free delivery on all orders</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-cat mb-50 wow fadeInUp text-center" data-wow-duration="1s" data-wow-delay=".2s">
+                            <div class="cat-icon">
+                                <img src="~/assets/img/icon/services2.svg" alt>
+                            </div>
+                            <div class="cat-cap">
+                                <h5>Secure Payment</h5>
+                                <p>Free delivery on all orders</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-cat mb-50 wow fadeInUp text-center" data-wow-duration="1s" data-wow-delay=".4s">
+                            <div class="cat-icon">
+                                <img src="~/assets/img/icon/services3.svg" alt>
+                            </div>
+                            <div class="cat-cap">
+                                <h5>Money Back Guarantee</h5>
+                                <p>Free delivery on all orders</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-cat mb-50 wow fadeInUp text-center" data-wow-duration="1s" data-wow-delay=".5s">
+                            <div class="cat-icon">
+                                <img src="~/assets/img/icon/services4.svg" alt>
+                            </div>
+                            <div class="cat-cap">
+                                <h5>Online Support</h5>
+                                <p>Free delivery on all orders</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer-wrapper gray-bg">
+            <div class="footer-area footer-padding">
+
+                <section class="subscribe-area">
+                    <div class="container">
+                        <div class="row justify-content-between subscribe-padding">
+                            <div class="col-xxl-3 col-xl-3 col-lg-4">
+                                <div class="subscribe-caption">
+                                    <h3>Subscribe Newsletter</h3>
+                                    <p>Subscribe newsletter to get 5% on all products.</p>
+                                </div>
+                            </div>
+                            <div class="col-xxl-5 col-xl-6 col-lg-7 col-md-9">
+                                <div class="subscribe-caption">
+                                    <form action="#">
+                                        <input type="text" placeholder="Enter your email">
+                                        <button class="subscribe-btn">Subscribe</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-xxl-2 col-xl-2 col-lg-4">
+
+                                <div class="footer-social">
+                                    <a href="https://bit.ly/sai4ull"><i class="fab fa-facebook"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-8">
+                            <div class="single-footer-caption mb-50">
+                                <div class="single-footer-caption mb-20">
+
+                                    <div class="footer-logo mb-35">
+                                        <a href="index-2.html"><img src="~/assets/img/logo/logo2_footer.png" alt></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4>Shop Men</h4>
+                                    <ul>
+                                        <li><a href="#">Clothing Fashion</a></li>
+                                        <li><a href="#">Winter</a></li>
+                                        <li><a href="#">Summer</a></li>
+                                        <li><a href="#">Formal</a></li>
+                                        <li><a href="#">Casual</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4>Shop Women</h4>
+                                    <ul>
+                                        <li><a href="#">Clothing Fashion</a></li>
+                                        <li><a href="#">Winter</a></li>
+                                        <li><a href="#">Summer</a></li>
+                                        <li><a href="#">Formal</a></li>
+                                        <li><a href="#">Casual</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4>Baby Collection</h4>
+                                    <ul>
+                                        <li><a href="#">Clothing Fashion</a></li>
+                                        <li><a href="#">Winter</a></li>
+                                        <li><a href="#">Summer</a></li>
+                                        <li><a href="#">Formal</a></li>
+                                        <li><a href="#">Casual</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4>Quick Links</h4>
+                                    <ul>
+                                        <li><a href="#">Track Your Order</a></li>
+                                        <li><a href="#">Support</a></li>
+                                        <li><a href="#">FAQ</a></li>
+                                        <li><a href="#">Carrier</a></li>
+                                        <li><a href="#">About</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom-area">
+                <div class="container">
+                    <div class="footer-border">
+                        <div class="row">
+                            <div class="col-xl-12 ">
+                                <div class="footer-copy-right text-center">
+                                    <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com/" target="_blank" rel="nofollow noopener">Colorlib</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="back-top">
+        <a class="wrapper" title="Go to Top" href="#">
+            <div class="arrows-container">
+                <div class="arrow arrow-one">
+                </div>
+                <div class="arrow arrow-two">
+                </div>
+            </div>
+        </a>
+    </div>
+
+
+    <script src="~/assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="~/assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="~/assets/js/popper.min.js"></script>
+    <script src="~/assets/js/bootstrap.min.js"></script>
+
+    <script src="~/assets/js/owl.carousel.min.js"></script>
+    <script src="~/assets/js/slick.min.js"></script>
+    <script src="~/assets/js/jquery.slicknav.min.js"></script>
+
+    <script src="~/assets/js/wow.min.js"></script>
+    <script src="~/assets/js/jquery.magnific-popup.js"></script>
+    <script src="~/assets/js/jquery.nice-select.min.js"></script>
+    <script src="~/assets/js/jquery.counterup.min.js"></script>
+    <script src="~/assets/js/waypoints.min.js"></script>
+    <script src="~/assets/js/price_rangs.js"></script>
+
+    <script src="~/assets/js/contact.js"></script>
+    <script src="~/assets/js/jquery.form.js"></script>
+    <script src="~/assets/js/jquery.validate.min.js"></script>
+    <script src="~/assets/js/mail-script.js"></script>
+    <script src="~/assets/js/jquery.ajaxchimp.min.js"></script>
+
+    <script src="~/assets/js/plugins.js"></script>
+    <script src="~/assets/js/main.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const addToCartBtn = document.querySelector('.addToCartBtn');
-            addToCartBtn.addEventListener('click', function () {
-                const productId = addToCartBtn.getAttribute('data-product-id');
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-                // Gọi hàm thêm sản phẩm vào giỏ hàng ở đây
-                addToCart(productId);
-            });
+        gtag('config', 'UA-23581568-13');
+    </script>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v2cb3a2ab87c5498db5ce7e6608cf55231689030342039" integrity="sha512-DI3rPuZDcpH/mSGyN22erN5QFnhl760f50/te7FTIYxodEF8jJnSFnfnmG/c+osmIQemvUrnBtxnMpNdzvx1/g==" data-cf-beacon='{"rayId":"7ea5c2835ec91252","version":"2023.4.0","b":1,"token":"cd0b4b3a733644fc843ef0b185f98241","si":100}' crossorigin="anonymous"></script>
+</body>
 
-            function addToCart(productId) {
-                // Thực hiện thêm sản phẩm vào giỏ hàng bằng SingleR hoặc các phương pháp xử lý dữ liệu khác ở đây
+<!-- Mirrored from preview.colorlib.com/theme/capitalshop/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 21 Jul 2023 19:13:40 GMT -->
+</html>
+=====================================================
+<head>
+</head>
+<body>
 
-                // Ví dụ sử dụng SingleR để thêm sản phẩm vào giỏ hàng
-                // ...
-            }
+
+
+    <script src="~/lib/microsoft/signalr/dist/browser/signalr.js"></script>
+    <script src="~/lib/microsoft/signalr/dist/browser/signalr.min.js"></script>
+
+    <script>
+        var connection = new signalR.HubConnectionBuilder().withUrl("/productHub").build();
+        connection.start();
+        function onAdd(productId) {
+            connection.invoke("AddToCart", productId);
+        }
+        connection.on("ProductAddToCart", (ProductId) => {
+            const element = document.getElementById(ProductId);
+            element.remove();
         });
     </script>
+
+    @*   Boostrap*@
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>

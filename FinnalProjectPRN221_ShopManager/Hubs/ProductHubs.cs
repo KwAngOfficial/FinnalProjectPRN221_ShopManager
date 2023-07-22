@@ -1,5 +1,6 @@
 ﻿using FinnalProjectPRN221_ShopManager.Model;
 using Microsoft.AspNetCore.SignalR;
+using Microsoft.AspNetCore.Http;
 
 namespace FinnalProjectPRN221_ShopManager.Hubs
 {
@@ -19,7 +20,6 @@ namespace FinnalProjectPRN221_ShopManager.Hubs
                 Product product = _context.Products.FirstOrDefault(x => x.ProductId == id);
                 if (product != null)
                 {
-                    
                     var newItem = new OrderDetail
                     {
                         OrderDetail1 = _context.OrderDetails.Count() + 1,
@@ -32,6 +32,8 @@ namespace FinnalProjectPRN221_ShopManager.Hubs
                     _context.SaveChanges();
                 }
             }
+
+            await Clients.All.SendAsync("ProductAddToCart",id);
         }
     }
 }
