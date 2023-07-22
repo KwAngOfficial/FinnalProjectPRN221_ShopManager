@@ -13,11 +13,11 @@ namespace FinnalProjectPRN221_ShopManager.Pages
         public List<Product> lstProductAddtoCart = new List<Product>();
         public List<Product> products = new List<Product>();
         public List<Category> categories = new List<Category>();
-        public List<ProductImage> productsImage;
+        
         private readonly IHttpContextAccessor _httpContextAccessor;
         private List<OrderDetail> cartItems = new List<OrderDetail>();
         public IPagedList<Product> PagedProducts { get; set; }
-        int pageSize = 2;
+        int pageSize = 6;
 
         public ProductsModel(ShopManagementContext context)
         {
@@ -27,14 +27,14 @@ namespace FinnalProjectPRN221_ShopManager.Pages
         public void OnGet(int? CategoryId, int pageNumber)
         {
             categories = _context.Categories.ToList();
-            productsImage = _context.ProductImages.ToList();
+            
             if (CategoryId != null)
             {
-                products = _context.Products.Include(x => x.Category).Where(x => x.CategoryId == CategoryId).ToList();
+                products = _context.Products.Include(x => x.Category).Include(x=>x.ProductImages).Where(x => x.CategoryId == CategoryId).ToList();
             }
             else
             {
-                products = _context.Products.Include(x=>x.Category).ToList();
+                products = _context.Products.Include(x=>x.Category).Include(x => x.ProductImages).ToList();
             }
             
             // Thêm chức năng phân trang
