@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Pages\AddCart.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.7">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -28,6 +32,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="Pages\AddCart.cshtml" />
     <None Include="wwwroot\css\main.css" />
     <None Include="wwwroot\css\util.css" />
     <None Include="wwwroot\fonts\font-awesome-4.7.0\css\font-awesome.css" />
@@ -146,6 +151,14 @@
     <None Include="wwwroot\vendor\select2\select2.js" />
     <None Include="wwwroot\vendor\select2\select2.min.css" />
     <None Include="wwwroot\vendor\select2\select2.min.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\AddCart.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Pages\AddCart.cshtml" />
   </ItemGroup>
 
 </Project>
