@@ -1,0 +1,41 @@
+﻿@page "/Edit/Product"
+@model FinnalProjectPRN221_ShopManager.Pages.EditProductModel
+@{
+}
+
+<h2>Edit Product</h2>
+<form method="post">
+    Product Id:
+    <input type="text" readonly value="@Model.ProductJson.ProductId" name="productId">
+    <hr />
+    Product Name:
+    <input type="text" name="productName">
+    <hr />
+    Price:
+    <input type="text" name="price">
+    <hr />
+    Quantity
+    <input type="text" name="quantity">
+    <hr />
+    Category:
+    <select name="categoryId">
+        <option value="">-- Chọn Category --</option>
+        @foreach (var category in Model.CategoriesEdit)
+        {
+            <option value="@category.CategoryId">@category.CategoryName</option>
+        }
+    </select>
+    <hr />
+    Band:
+    <select name="brandId">
+        <option value="">-- Chọn Brand --</option>
+        @foreach (var brand in Model.BrandEdit)
+        {
+            <option value="@brand.BrandId">@brand.BrandName</option>
+        }
+    </select>
+    <hr />
+    Product Image:
+    <input type="file" name="productImage">
+    <button type="submit"> Save Change</button>
+</form>

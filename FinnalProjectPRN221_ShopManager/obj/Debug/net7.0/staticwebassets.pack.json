@@ -1,12 +1,332 @@
 {
   "Files": [
     {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\css\\demo.css",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\css\\demo.css"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\img\\avatars\\1.png",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\img\\avatars\\1.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\img\\avatars\\5.png",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\img\\avatars\\5.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\img\\avatars\\6.png",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\img\\avatars\\6.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\img\\avatars\\7.png",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\img\\avatars\\7.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\img\\backgrounds\\18.jpg",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\img\\backgrounds\\18.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\img\\elements\\1.jpg",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\img\\elements\\1.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\img\\elements\\11.jpg",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\img\\elements\\11.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\img\\elements\\12.jpg",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\img\\elements\\12.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\img\\elements\\13.jpg",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\img\\elements\\13.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\img\\elements\\17.jpg",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\img\\elements\\17.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\img\\elements\\18.jpg",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\img\\elements\\18.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\img\\elements\\19.jpg",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\img\\elements\\19.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\img\\elements\\2.jpg",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\img\\elements\\2.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\img\\elements\\20.jpg",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\img\\elements\\20.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\img\\elements\\3.jpg",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\img\\elements\\3.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\img\\elements\\4.jpg",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\img\\elements\\4.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\img\\elements\\5.jpg",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\img\\elements\\5.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\img\\elements\\7.jpg",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\img\\elements\\7.jpg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\img\\icons\\brands\\asana.png",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\img\\icons\\brands\\asana.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\img\\icons\\brands\\behance.png",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\img\\icons\\brands\\behance.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\img\\icons\\brands\\dribbble.png",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\img\\icons\\brands\\dribbble.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\img\\icons\\brands\\facebook.png",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\img\\icons\\brands\\facebook.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\img\\icons\\brands\\github.png",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\img\\icons\\brands\\github.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\img\\icons\\brands\\google.png",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\img\\icons\\brands\\google.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\img\\icons\\brands\\instagram.png",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\img\\icons\\brands\\instagram.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\img\\icons\\brands\\mailchimp.png",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\img\\icons\\brands\\mailchimp.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\img\\icons\\brands\\slack.png",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\img\\icons\\brands\\slack.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\img\\icons\\brands\\twitter.png",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\img\\icons\\brands\\twitter.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\img\\icons\\unicons\\cc-primary.png",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\img\\icons\\unicons\\cc-primary.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\img\\icons\\unicons\\cc-success.png",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\img\\icons\\unicons\\cc-success.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\img\\icons\\unicons\\cc-warning.png",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\img\\icons\\unicons\\cc-warning.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\img\\icons\\unicons\\chart-success.png",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\img\\icons\\unicons\\chart-success.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\img\\icons\\unicons\\chart.png",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\img\\icons\\unicons\\chart.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\img\\icons\\unicons\\paypal.png",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\img\\icons\\unicons\\paypal.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\img\\icons\\unicons\\wallet-info.png",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\img\\icons\\unicons\\wallet-info.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\img\\icons\\unicons\\wallet.png",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\img\\icons\\unicons\\wallet.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\img\\illustrations\\girl-doing-yoga-light.png",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\img\\illustrations\\girl-doing-yoga-light.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\img\\illustrations\\man-with-laptop-light.png",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\img\\illustrations\\man-with-laptop-light.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\img\\illustrations\\page-misc-error-light.png",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\img\\illustrations\\page-misc-error-light.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\img\\layouts\\layout-container-light.png",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\img\\layouts\\layout-container-light.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\img\\layouts\\layout-fluid-light.png",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\img\\layouts\\layout-fluid-light.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\img\\layouts\\layout-without-menu-light.png",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\img\\layouts\\layout-without-menu-light.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\img\\layouts\\layout-without-navbar-light.png",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\img\\layouts\\layout-without-navbar-light.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\js\\config.js",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\js\\config.js"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\js\\dashboards-analytics.js",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\js\\dashboards-analytics.js"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\js\\extended-ui-perfect-scrollbar.js",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\js\\extended-ui-perfect-scrollbar.js"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\js\\form-basic-inputs.js",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\js\\form-basic-inputs.js"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\js\\main.js",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\js\\main.js"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\js\\pages-account-settings-account.js",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\js\\pages-account-settings-account.js"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\js\\ui-modals.js",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\js\\ui-modals.js"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\js\\ui-popover.js",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\js\\ui-popover.js"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\js\\ui-toasts.js",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\js\\ui-toasts.js"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\vendor\\css\\core.css",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\vendor\\css\\core.css"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\vendor\\css\\pages\\page-auth.css",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\vendor\\css\\pages\\page-auth.css"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\vendor\\css\\pages\\page-icons.css",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\vendor\\css\\pages\\page-icons.css"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\vendor\\css\\pages\\page-misc.css",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\vendor\\css\\pages\\page-misc.css"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\vendor\\css\\theme-default.css",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\vendor\\css\\theme-default.css"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\vendor\\fonts\\boxicons-2.html",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\vendor\\fonts\\boxicons-2.html"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\vendor\\fonts\\boxicons-3.html",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\vendor\\fonts\\boxicons-3.html"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\vendor\\fonts\\boxicons-4.html",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\vendor\\fonts\\boxicons-4.html"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\vendor\\fonts\\boxicons.css",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\vendor\\fonts\\boxicons.css"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\vendor\\fonts\\boxicons.html",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\vendor\\fonts\\boxicons.html"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\vendor\\fonts\\boxicons\\boxicons.eot",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\vendor\\fonts\\boxicons\\boxicons.eot"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\vendor\\fonts\\boxicons\\boxicons.ttf",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\vendor\\fonts\\boxicons\\boxicons.ttf"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\vendor\\fonts\\boxicons\\boxicons.woff",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\vendor\\fonts\\boxicons\\boxicons.woff"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\vendor\\fonts\\boxicons\\boxicons.woff2",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\vendor\\fonts\\boxicons\\boxicons.woff2"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\vendor\\fonts\\boxicons\\boxiconsd41d.svg",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\vendor\\fonts\\boxicons\\boxiconsd41d.svg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\vendor\\fonts\\boxiconsd41d.html",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\vendor\\fonts\\boxiconsd41d.html"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\vendor\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\vendor\\js\\bootstrap.js"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\vendor\\js\\helpers.js",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\vendor\\js\\helpers.js"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\vendor\\js\\menu.js",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\vendor\\js\\menu.js"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\vendor\\libs\\apex-charts\\apex-charts.css",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\vendor\\libs\\apex-charts\\apex-charts.css"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\vendor\\libs\\apex-charts\\apexcharts.js",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\vendor\\libs\\apex-charts\\apexcharts.js"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\vendor\\libs\\jquery\\jquery.js",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\vendor\\libs\\jquery\\jquery.js"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\vendor\\libs\\masonry\\masonry.js",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\vendor\\libs\\masonry\\masonry.js"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.css",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.css"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.js",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.js"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\AdminCss\\vendor\\libs\\popper\\popper.js",
+      "PackagePath": "staticwebassets\\assets\\AdminCss\\vendor\\libs\\popper\\popper.js"
+    },
+    {
       "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\css\\animate.min.css",
       "PackagePath": "staticwebassets\\assets\\css\\animate.min.css"
     },
     {
       "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\assets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\css\\demo.css",
+      "PackagePath": "staticwebassets\\assets\\css\\demo.css"
     },
     {
       "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\css\\flaticon.css",
@@ -163,6 +483,26 @@
     {
       "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\fonts\\themifyd41d.eot",
       "PackagePath": "staticwebassets\\assets\\fonts\\themifyd41d.eot"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\avatars\\1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\avatars\\1.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\avatars\\5.png",
+      "PackagePath": "staticwebassets\\assets\\img\\avatars\\5.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\avatars\\6.png",
+      "PackagePath": "staticwebassets\\assets\\img\\avatars\\6.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\avatars\\7.png",
+      "PackagePath": "staticwebassets\\assets\\img\\avatars\\7.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\backgrounds\\18.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\backgrounds\\18.jpg"
     },
     {
       "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\blog\\author.png",
@@ -401,6 +741,106 @@
       "PackagePath": "staticwebassets\\assets\\img\\icon\\services4.svg"
     },
     {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\icons\\brands\\asana.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\brands\\asana.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\icons\\brands\\behance.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\brands\\behance.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\icons\\brands\\dribbble.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\brands\\dribbble.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\icons\\brands\\facebook.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\brands\\facebook.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\icons\\brands\\github.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\brands\\github.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\icons\\brands\\google.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\brands\\google.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\icons\\brands\\instagram.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\brands\\instagram.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\icons\\brands\\mailchimp.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\brands\\mailchimp.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\icons\\brands\\slack.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\brands\\slack.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\icons\\brands\\twitter.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\brands\\twitter.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\icons\\unicons\\cc-primary.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\unicons\\cc-primary.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\icons\\unicons\\cc-success.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\unicons\\cc-success.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\icons\\unicons\\cc-warning.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\unicons\\cc-warning.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\icons\\unicons\\chart-success.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\unicons\\chart-success.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\icons\\unicons\\chart.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\unicons\\chart.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\icons\\unicons\\paypal.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\unicons\\paypal.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\icons\\unicons\\wallet-info.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\unicons\\wallet-info.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\icons\\unicons\\wallet.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\unicons\\wallet.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\illustrations\\girl-doing-yoga-light.png",
+      "PackagePath": "staticwebassets\\assets\\img\\illustrations\\girl-doing-yoga-light.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\illustrations\\man-with-laptop-light.png",
+      "PackagePath": "staticwebassets\\assets\\img\\illustrations\\man-with-laptop-light.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\illustrations\\page-misc-error-light.png",
+      "PackagePath": "staticwebassets\\assets\\img\\illustrations\\page-misc-error-light.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\layouts\\layout-container-light.png",
+      "PackagePath": "staticwebassets\\assets\\img\\layouts\\layout-container-light.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\layouts\\layout-fluid-light.png",
+      "PackagePath": "staticwebassets\\assets\\img\\layouts\\layout-fluid-light.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\layouts\\layout-without-menu-light.png",
+      "PackagePath": "staticwebassets\\assets\\img\\layouts\\layout-without-menu-light.png"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\layouts\\layout-without-navbar-light.png",
+      "PackagePath": "staticwebassets\\assets\\img\\layouts\\layout-without-navbar-light.png"
+    },
+    {
       "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\img\\logo\\logo.png",
       "PackagePath": "staticwebassets\\assets\\img\\logo\\logo.png"
     },
@@ -461,8 +901,24 @@
       "PackagePath": "staticwebassets\\assets\\js\\bootstrap.min.js"
     },
     {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\js\\config.js",
+      "PackagePath": "staticwebassets\\assets\\js\\config.js"
+    },
+    {
       "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\js\\contact.js",
       "PackagePath": "staticwebassets\\assets\\js\\contact.js"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\js\\dashboards-analytics.js",
+      "PackagePath": "staticwebassets\\assets\\js\\dashboards-analytics.js"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\js\\extended-ui-perfect-scrollbar.js",
+      "PackagePath": "staticwebassets\\assets\\js\\extended-ui-perfect-scrollbar.js"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\js\\form-basic-inputs.js",
+      "PackagePath": "staticwebassets\\assets\\js\\form-basic-inputs.js"
     },
     {
       "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\js\\jquery.ajaxchimp.min.js",
@@ -505,6 +961,10 @@
       "PackagePath": "staticwebassets\\assets\\js\\owl.carousel.min.js"
     },
     {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\js\\pages-account-settings-account.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages-account-settings-account.js"
+    },
+    {
       "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\js\\plugins.js",
       "PackagePath": "staticwebassets\\assets\\js\\plugins.js"
     },
@@ -517,8 +977,24 @@
       "PackagePath": "staticwebassets\\assets\\js\\price_rangs.js"
     },
     {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\js\\quangtk.js",
+      "PackagePath": "staticwebassets\\assets\\js\\quangtk.js"
+    },
+    {
       "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\js\\slick.min.js",
       "PackagePath": "staticwebassets\\assets\\js\\slick.min.js"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\js\\ui-modals.js",
+      "PackagePath": "staticwebassets\\assets\\js\\ui-modals.js"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\js\\ui-popover.js",
+      "PackagePath": "staticwebassets\\assets\\js\\ui-popover.js"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\js\\ui-toasts.js",
+      "PackagePath": "staticwebassets\\assets\\js\\ui-toasts.js"
     },
     {
       "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\assets\\js\\vendor\\jquery-1.12.4.min.js",
@@ -1401,6 +1877,26 @@
       "PackagePath": "staticwebassets\\vendor\\css-hamburgers\\hamburgers.min.css"
     },
     {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\vendor\\css\\core.css",
+      "PackagePath": "staticwebassets\\vendor\\css\\core.css"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\vendor\\css\\pages\\page-auth.css",
+      "PackagePath": "staticwebassets\\vendor\\css\\pages\\page-auth.css"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\vendor\\css\\pages\\page-icons.css",
+      "PackagePath": "staticwebassets\\vendor\\css\\pages\\page-icons.css"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\vendor\\css\\pages\\page-misc.css",
+      "PackagePath": "staticwebassets\\vendor\\css\\pages\\page-misc.css"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\vendor\\css\\theme-default.css",
+      "PackagePath": "staticwebassets\\vendor\\css\\theme-default.css"
+    },
+    {
       "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\vendor\\daterangepicker\\daterangepicker.css",
       "PackagePath": "staticwebassets\\vendor\\daterangepicker\\daterangepicker.css"
     },
@@ -1417,8 +1913,92 @@
       "PackagePath": "staticwebassets\\vendor\\daterangepicker\\moment.min.js"
     },
     {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\vendor\\fonts\\boxicons-2.html",
+      "PackagePath": "staticwebassets\\vendor\\fonts\\boxicons-2.html"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\vendor\\fonts\\boxicons-3.html",
+      "PackagePath": "staticwebassets\\vendor\\fonts\\boxicons-3.html"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\vendor\\fonts\\boxicons-4.html",
+      "PackagePath": "staticwebassets\\vendor\\fonts\\boxicons-4.html"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\vendor\\fonts\\boxicons.css",
+      "PackagePath": "staticwebassets\\vendor\\fonts\\boxicons.css"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\vendor\\fonts\\boxicons.html",
+      "PackagePath": "staticwebassets\\vendor\\fonts\\boxicons.html"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\vendor\\fonts\\boxicons\\boxicons.eot",
+      "PackagePath": "staticwebassets\\vendor\\fonts\\boxicons\\boxicons.eot"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\vendor\\fonts\\boxicons\\boxicons.ttf",
+      "PackagePath": "staticwebassets\\vendor\\fonts\\boxicons\\boxicons.ttf"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\vendor\\fonts\\boxicons\\boxicons.woff",
+      "PackagePath": "staticwebassets\\vendor\\fonts\\boxicons\\boxicons.woff"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\vendor\\fonts\\boxicons\\boxicons.woff2",
+      "PackagePath": "staticwebassets\\vendor\\fonts\\boxicons\\boxicons.woff2"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\vendor\\fonts\\boxicons\\boxiconsd41d.svg",
+      "PackagePath": "staticwebassets\\vendor\\fonts\\boxicons\\boxiconsd41d.svg"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\vendor\\fonts\\boxiconsd41d.html",
+      "PackagePath": "staticwebassets\\vendor\\fonts\\boxiconsd41d.html"
+    },
+    {
       "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\vendor\\jquery\\jquery-3.2.1.min.js",
       "PackagePath": "staticwebassets\\vendor\\jquery\\jquery-3.2.1.min.js"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\vendor\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\vendor\\js\\bootstrap.js"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\vendor\\js\\helpers.js",
+      "PackagePath": "staticwebassets\\vendor\\js\\helpers.js"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\vendor\\js\\menu.js",
+      "PackagePath": "staticwebassets\\vendor\\js\\menu.js"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\vendor\\libs\\apex-charts\\apex-charts.css",
+      "PackagePath": "staticwebassets\\vendor\\libs\\apex-charts\\apex-charts.css"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\vendor\\libs\\apex-charts\\apexcharts.js",
+      "PackagePath": "staticwebassets\\vendor\\libs\\apex-charts\\apexcharts.js"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\vendor\\libs\\jquery\\jquery.js",
+      "PackagePath": "staticwebassets\\vendor\\libs\\jquery\\jquery.js"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\vendor\\libs\\masonry\\masonry.js",
+      "PackagePath": "staticwebassets\\vendor\\libs\\masonry\\masonry.js"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.css",
+      "PackagePath": "staticwebassets\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.css"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.js",
+      "PackagePath": "staticwebassets\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.js"
+    },
+    {
+      "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\vendor\\libs\\popper\\popper.js",
+      "PackagePath": "staticwebassets\\vendor\\libs\\popper\\popper.js"
     },
     {
       "Id": "E:\\Course_7\\PRN221\\FinnalProjectPRN221_ShopManager\\FinnalProjectPRN221_ShopManager\\wwwroot\\vendor\\perfect-scrollbar\\perfect-scrollbar.css",

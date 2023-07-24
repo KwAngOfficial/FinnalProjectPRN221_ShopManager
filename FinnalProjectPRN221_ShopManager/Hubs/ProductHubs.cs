@@ -6,7 +6,7 @@ namespace FinnalProjectPRN221_ShopManager.Hubs
 {
     public class ProductHubs : Hub
     {
-        private ShopManagementContext _context;
+        private readonly ShopManagementContext  _context;
 
         public ProductHubs(ShopManagementContext context)
         {
