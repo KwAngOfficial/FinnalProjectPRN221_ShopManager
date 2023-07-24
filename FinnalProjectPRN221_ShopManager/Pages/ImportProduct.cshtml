@@ -1,0 +1,43 @@
+﻿@page
+@model FinnalProjectPRN221_ShopManager.Pages.ImportProductModel
+@{
+}
+
+
+<h2>Add Import Product</h2>
+<form method="post">
+    ID:
+    <input type="text" name="Id">
+    Product ID:
+    <input type="text" name="ProductId">
+    <hr />
+    Ngày nhập:
+    <input type="date" name="date">
+    Số lượng:
+    <input type="text" name="quantity">
+    <hr />
+    Giá:
+    <input type="text" name="toltalPrice">
+
+    <hr />
+    Tên nhà cung cấp:
+    <select name="supplierId">
+        <option value="">-- Chọn Supplier --</option>
+        @foreach (var category in Model.Suppliers)
+        {
+            <option value="@category.SupplierId">@category.SupplierName</option>
+        }
+    </select>
+    <hr />
+    UnitId:
+    <select name="unitId">
+        <option value="">-- Chọn units --</option>
+        @foreach (var brand in Model.units)
+        {
+            <option value="@brand.UnitId">@brand.UnitName</option>
+        }
+    </select>
+    <hr />
+
+    <button type="submit"> Add New</button>
+</form>

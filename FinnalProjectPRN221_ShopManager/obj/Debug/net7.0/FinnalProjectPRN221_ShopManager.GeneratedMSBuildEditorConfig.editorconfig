@@ -16,12 +16,32 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = E:\Course_7\PRN221\FinnalProjectPRN221_ShopManager\FinnalProjectPRN221_ShopManager
 build_property._RazorSourceGeneratorDebug = 
 
+[E:/Course_7/PRN221/FinnalProjectPRN221_ShopManager/FinnalProjectPRN221_ShopManager/Pages/AddProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkUHJvZHVjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/Course_7/PRN221/FinnalProjectPRN221_ShopManager/FinnalProjectPRN221_ShopManager/Pages/Cart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/Course_7/PRN221/FinnalProjectPRN221_ShopManager/FinnalProjectPRN221_ShopManager/Pages/EditImportProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdEltcG9ydFByb2R1Y3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/Course_7/PRN221/FinnalProjectPRN221_ShopManager/FinnalProjectPRN221_ShopManager/Pages/EditProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdFByb2R1Y3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Course_7/PRN221/FinnalProjectPRN221_ShopManager/FinnalProjectPRN221_ShopManager/Pages/ImportProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW1wb3J0UHJvZHVjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Course_7/PRN221/FinnalProjectPRN221_ShopManager/FinnalProjectPRN221_ShopManager/Pages/ImportProductDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW1wb3J0UHJvZHVjdERldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Course_7/PRN221/FinnalProjectPRN221_ShopManager/FinnalProjectPRN221_ShopManager/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/Course_7/PRN221/FinnalProjectPRN221_ShopManager/FinnalProjectPRN221_ShopManager/Pages/Login.cshtml]

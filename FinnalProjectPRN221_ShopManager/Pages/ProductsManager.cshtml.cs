@@ -36,6 +36,10 @@ namespace FinnalProjectPRN221_ShopManager.Pages
             };
             switch (action)
             {
+                case "add":
+                    return RedirectToPage("AddProduct");
+                    break;
+
                 case "edit":
                     if (productId != null)
                     {

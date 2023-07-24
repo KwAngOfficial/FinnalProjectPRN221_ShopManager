@@ -1,13 +1,11 @@
-﻿@page "/Edit/Product"
-@model FinnalProjectPRN221_ShopManager.Pages.EditProductModel
+﻿@page "/Add/Product"
+@model FinnalProjectPRN221_ShopManager.Pages.AddProductModel
 @{
 }
 
 <h2>Edit Product</h2>
 <form method="post">
-    Product Id:.
-    <input type="text" readonly value="@Model.ProductJson.ProductId" name="productId">
-    <hr />
+    
     Product Name:
     <input type="text" name="productName">
     <hr />
@@ -20,7 +18,7 @@
     Category:
     <select name="categoryId">
         <option value="">-- Chọn Category --</option>
-        @foreach (var category in Model.CategoriesEdit)
+        @foreach (var category in Model.lstCategory)
         {
             <option value="@category.CategoryId">@category.CategoryName</option>
         }
@@ -29,7 +27,7 @@
     Band:
     <select name="brandId">
         <option value="">-- Chọn Brand --</option>
-        @foreach (var brand in Model.BrandEdit)
+        @foreach (var brand in Model.lstBrand)
         {
             <option value="@brand.BrandId">@brand.BrandName</option>
         }
@@ -37,5 +35,5 @@
     <hr />
     Product Image:
     <input type="file" name="productImage">
-    <button type="submit"> Save Change</button>
+    <button type="submit"> Add New</button>
 </form>

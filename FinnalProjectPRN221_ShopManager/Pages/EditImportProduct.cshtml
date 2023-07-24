@@ -1,0 +1,38 @@
+﻿@page
+@model FinnalProjectPRN221_ShopManager.Pages.EditImportProductModel
+@{
+}
+
+<h2>Edit Product</h2>
+<form method="post">
+    
+    Date:
+    <input type="date" name="importDate">
+    <hr />
+    Price:
+    <input type="text" name="totalPrice">
+    <hr />
+    
+    Supplier:
+    <select name="supplierId">
+        <option value="">-- Chọn Supplier --</option>
+        @foreach (var category in Model.imp)
+        {
+            <option value="@category.SupplierId">@category.Supplier.SupplierName</option>
+        }
+    </select>
+    <hr />
+    Account:
+    <select name="accountId">
+        <option value="">-- Chọn Account --</option>
+        @foreach (var brand in Model.imp)
+        {
+            <option value="@brand.Account.AccountId">@brand.Account.AccountName</option>
+        }
+    </select>
+    <hr />
+    Product Image:
+    <input type="file" name="productImage">
+    <button type="submit"> Save Change</button>
+</form>
+

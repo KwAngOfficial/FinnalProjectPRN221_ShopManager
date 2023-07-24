@@ -1,8 +1,8 @@
-﻿@page "/Manager/Product"
-@using FinnalProjectPRN221_ShopManager.Model;
-@model FinnalProjectPRN221_ShopManager.Pages.ProductsManagerModel
+﻿@page "Nhap"
+@model FinnalProjectPRN221_ShopManager.Pages.IndexModel
 @{
 }
+
 <!DOCTYPE html>
 
 <!-- =========================================================
@@ -277,19 +277,19 @@
                                 <table class="table table-striped">
                                     <thead>
                                         <tr>
-                                            <th>ProductName</th>
-                                            <th>Price</th>
-                                            <th>Category</th>
-                                            <th>Brand</th>
-                                            <th>Quantity</th>
+                                            <th>ID</th>
+                                            <th>Ngày nhập</th>
+                                            <th>Tổng giá</th>
+                                            <th>Tên nhà cung cấp</th>
+                                            <th>Tên nhân viên</th>
                                         </tr>
                                     </thead>
                                     <tbody class="table-border-bottom-0">
-                                        @foreach (Product item in Model.lstProduct)
+                                        @foreach (var import in Model.Imports)
                                         {
                                             <tr>
-                                                <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>@item.ProductName</strong></td>
-                                                <td>@item.Price</td>
+                                                <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>@import.ImportId</strong></td>
+                                                <td>@import.ImportDate</td>
                                                 @*<td>
                                                     <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
                                                         <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" title="Lilian Fuller">
@@ -303,16 +303,16 @@
                                                         </li>
                                                     </ul>
                                                 </td>*@
-                                                <td><span class="badge bg-label-primary me-1">@item.Category.CategoryName</span></td>
-                                                <td><span class="badge bg-label-primary me-1">@item.Brand.BrandName</span></td>
-                                                <td><span class="badge bg-label-primary me-1">@item.Quantity</span></td>
+                                                <td><span class="badge bg-label-primary me-1">@import.TotalPrice</span></td>
+                                                <td><span class="badge bg-label-primary me-1">@import.Supplier?.SupplierName</span></td>
+                                                <td><span class="badge bg-label-primary me-1">@import.Account?.AccountName</span></td>
                                                 <td>
                                                     <div class="dropdown">
                                                         <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="bx bx-dots-vertical-rounded"></i></button>
                                                         <div class="dropdown-menu">
                                                             <form method="post">
-                                                                <input type="hidden" name="productId" value="@item.ProductId">
-                                                                <button class="dropdown-item bx bx-edit-alt me-1" name="action" value="add">Add New Product</button>
+                                                                <input type="hidden" name="importId" value="@import.ImportId">
+                                                                <button class="dropdown-item bx bx-edit-alt me-1" name="action" value="add">Add New Request</button>
                                                                 <button class="dropdown-item bx bx-edit-alt me-1" name="action" value="edit" >Edit</button>
                                                                 <button class="dropdown-item bx bx-edit-alt me-1" name="action" value="delete" >Delete</button>
                                                             </form>
@@ -362,3 +362,4 @@
 
 <!-- Mirrored from demos.themeselection.com/sneat-bootstrap-html-admin-template-free/html/tables-basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Jul 2023 00:29:04 GMT -->
 </html>
+
